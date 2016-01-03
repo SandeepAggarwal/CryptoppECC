@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.8"
   s.prepare_command= "sudo sh CryptoppECC/CryptoppLibrary/builder.sh"
 
-  s.source       = { :git => "https://github.com/SandeepAggarwal/CryptoppECC.git", :commit => "34a8441d5c89f63a93b49c8250695c36b7bb82ce" }
+  s.source       = { :git => "https://github.com/SandeepAggarwal/CryptoppECC.git", :tag =>"0.0.1" }
   s.source_files  = "CryptoppECC/CryptoppLibrary/*.h", "CryptoppECC/CryptoppWrapper/*.{h,mm}"
   s.public_header_files = "CryptoppECC/CryptoppWrapper/*.h"
   s.vendored_library ="CryptoppECC/CryptoppLibrary/bin/libcryptopp.a"
