@@ -1,24 +1,28 @@
-====================
-# CryptoppECC
-====================
+==================================
+# CryptoppECC for iOS and MacOSX
+==================================
 [![Build Status](https://travis-ci.org/CryptoppECC/CryptoppECC.svg)](https://travis-ci.org/CryptoppECC/CryptoppECC)
 [![codecov.io](https://codecov.io/github/CryptoppECC/CryptoppECC/coverage.svg?branch=master)](https://codecov.io/github/CryptoppECC/CryptoppECC?branch=master)
 [![Cocoapods Compatible](https://img.shields.io/cocoapods/v/CryptoppECC.svg)](https://img.shields.io/cocoapods/v/CryptoppECC.svg)
 [![Platform](https://img.shields.io/cocoapods/p/CryptoppECC.svg?style=flat)](http://cocoadocs.org/docsets/CryptoppECC)
 
-CryptoppECC-Encryption/Decryption using ECC(Elliptic curve cryptography)
+CryptoppECC-Encryption/Decryption using ECC(Elliptic curve cryptography).
+
+#. Also supports Verify the signed message using ECDSA
+#. Compatible with Android's Bouncy Castle.
 
 ### Installation with CocoaPods
 
 #### Podfile
 
 ```ruby
-platform :ios, '7.0'
-pod "CryptoppECC
+pod "CryptoppECC"
+
+```
 
 ## Methods
 
-###Encyption/Decryption
+### Encyption/Decryption
 
 ```objective-c
 -(void)randomKeysEncryptDecrypt;
@@ -39,6 +43,10 @@ pod "CryptoppECC
 -(BOOL)verifyMessage:(NSString*)message signedCertificate:(NSString*)signedCertificateInBase64  compressedServerPublicPoint:(NSString*)compressedServerPublicPointInBase64  curve:(CurveType)curveType;
 -(void)exampleVerify;
 ```
+
+## Requirements
+
+ViewPager supports minimum iOS 7 and minimum MacOSX 10.10 and uses ARC.
 
 
 ## Contact
