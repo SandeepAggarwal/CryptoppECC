@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>CryptoppECC by SandeepAggarwal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">CryptoppECC</h1>
+      <h2 class="project-tagline">CryptoppECC-Encryption/Decryption using ECC(Elliptic curve cryptography) for iOS and MacOSX</h2>
+      <a href="https://github.com/SandeepAggarwal/CryptoppECC" class="btn">View on GitHub</a>
+      <a href="https://github.com/SandeepAggarwal/CryptoppECC/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/SandeepAggarwal/CryptoppECC/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="cryptoppecc-for-ios-and-macosx" class="anchor" href="#cryptoppecc-for-ios-and-macosx" aria-hidden="true"><span class="octicon octicon-link"></span></a>CryptoppECC for iOS and MacOSX</h1>
+
+<h1></h1>
+
+<p><a href="https://img.shields.io/cocoapods/v/CryptoppECC.svg"><img src="https://img.shields.io/cocoapods/v/CryptoppECC.svg" alt="Cocoapods Compatible"></a>
+<a href="http://cocoadocs.org/docsets/CryptoppECC"><img src="https://img.shields.io/cocoapods/p/CryptoppECC.svg?style=flat" alt="Platform"></a></p>
+
+<p>CryptoppECC-Encryption/Decryption using ECC(Elliptic curve cryptography).</p>
+
+<h3>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Features</h3>
+
+<ol>
+<li>Also supports Verify the signed message using ECDSA</li>
+<li>Compatible with Android's Bouncy Castle.</li>
+</ol>
+
+<h3>
+<a id="installation-with-cocoapods" class="anchor" href="#installation-with-cocoapods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation with CocoaPods</h3>
+
+<h4>
+<a id="podfile" class="anchor" href="#podfile" aria-hidden="true"><span class="octicon octicon-link"></span></a>Podfile</h4>
+
+<div class="highlight highlight-source-ruby"><pre>pod <span class="pl-s"><span class="pl-pds">"</span>CryptoppECC<span class="pl-pds">"</span></span>
+</pre></div>
+
+<h2>
+<a id="methods" class="anchor" href="#methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>Methods</h2>
+
+<h3>
+<a id="encyptiondecryption" class="anchor" href="#encyptiondecryption" aria-hidden="true"><span class="octicon octicon-link"></span></a>Encyption/Decryption</h3>
+
+<div class="highlight highlight-source-objc"><pre>-(<span class="pl-k">void</span>)randomKeysEncryptDecrypt;
+
+-(<span class="pl-k">void</span>)encrypt:(<span class="pl-c1">NSString</span>*) public_point;
+
+-(<span class="pl-k">void</span>)decrypt:(<span class="pl-c1">NSString</span>*)private_point;
+
+-(<span class="pl-c1">NSString</span>*) decrypt:(<span class="pl-c1">NSString</span>*) encryptedMessageInBase64 : (<span class="pl-c1">NSString</span>*) privateKeyExponentInBase64 curve:(CurveType)curveType;
+
+-(<span class="pl-c1">NSString</span>*) encrypt:(<span class="pl-c1">NSString</span>*) message : (<span class="pl-c1">NSString</span>*) compressedPublicKeyPointInBase64 curve:(CurveType)curveType;
+</pre></div>
+
+<h3>
+<a id="verify-signing" class="anchor" href="#verify-signing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Verify Signing</h3>
+
+<div class="highlight highlight-source-objc"><pre>-(<span class="pl-k">BOOL</span>)verifyMessage:(<span class="pl-c1">NSString</span>*)message signedCertificate:(<span class="pl-c1">NSString</span>*)signedCertificateInBase64  compressedServerPublicPoint:(<span class="pl-c1">NSString</span>*)compressedServerPublicPointInBase64  curve:(CurveType)curveType;
+-(<span class="pl-k">void</span>)exampleVerify;</pre></div>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>ViewPager supports minimum iOS 7 and minimum MacOSX 10.10 and uses ARC.</p>
+
+<h2>
+<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact</h2>
+
+<p><a href="https://twitter.com/sandeepCool77">@sandeepCool77</a></p>
+
+<p><a href="mailto:smartsandeep1129@gmail.com">Sandeep Aggarwal</a></p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>CryptoppECC is released under the MIT license. See LICENSE for details.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/SandeepAggarwal/CryptoppECC">CryptoppECC</a> is maintained by <a href="https://github.com/SandeepAggarwal">SandeepAggarwal</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
