@@ -25,6 +25,10 @@ pod "CryptoppECC"
 ### Encyption/Decryption
 
 ```objective-c
+#import "CryptoppECC.h"
+```
+
+```objective-c
 -(void)randomKeysEncryptDecrypt;
 
 -(void)encrypt:(NSString*) public_point;
@@ -38,6 +42,11 @@ pod "CryptoppECC"
 ```
 
 ###Verify Signing
+
+```objective-c
+#import "CryptoppECDSA.h"
+```
+
 
 ```objective-c
 -(BOOL)verifyMessage:(NSString*)message signedCertificate:(NSString*)signedCertificateInBase64  compressedServerPublicPoint:(NSString*)compressedServerPublicPointInBase64  curve:(CurveType)curveType;
