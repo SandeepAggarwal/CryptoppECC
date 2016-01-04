@@ -1,8 +1,5 @@
-==================================
 # CryptoppECC for iOS and MacOSX
 ==================================
-[![Build Status](https://travis-ci.org/CryptoppECC/CryptoppECC.svg)](https://travis-ci.org/CryptoppECC/CryptoppECC)
-[![codecov.io](https://codecov.io/github/CryptoppECC/CryptoppECC/coverage.svg?branch=master)](https://codecov.io/github/CryptoppECC/CryptoppECC?branch=master)
 [![Cocoapods Compatible](https://img.shields.io/cocoapods/v/CryptoppECC.svg)](https://img.shields.io/cocoapods/v/CryptoppECC.svg)
 [![Platform](https://img.shields.io/cocoapods/p/CryptoppECC.svg?style=flat)](http://cocoadocs.org/docsets/CryptoppECC)
 
@@ -11,8 +8,8 @@ CryptoppECC-Encryption/Decryption using ECC(Elliptic curve cryptography).
 
 ### Features
 
-1. *Also supports Verify the signed message using ECDSA*
-2. *Compatible with Android's Bouncy Castle.*
+1. Also supports Verify the signed message using ECDSA
+2. Compatible with Android's Bouncy Castle.
 
 ### Installation with CocoaPods
 
