@@ -8,8 +8,11 @@
 
 CryptoppECC-Encryption/Decryption using ECC(Elliptic curve cryptography).
 
-#. Also supports Verify the signed message using ECDSA
-#. Compatible with Android's Bouncy Castle.
+
+### Features
+
+1. *Also supports Verify the signed message using ECDSA*
+2. *Compatible with Android's Bouncy Castle.*
 
 ### Installation with CocoaPods
 
