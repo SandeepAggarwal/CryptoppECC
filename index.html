@@ -52,6 +52,8 @@
 <h3>
 <a id="encyptiondecryption" class="anchor" href="#encyptiondecryption" aria-hidden="true"><span class="octicon octicon-link"></span></a>Encyption/Decryption</h3>
 
+<div class="highlight highlight-source-objc"><pre>#<span class="pl-k">import</span> <span class="pl-s"><span class="pl-pds">"</span>CryptoppECC.h<span class="pl-pds">"</span></span></pre></div>
+
 <div class="highlight highlight-source-objc"><pre>-(<span class="pl-k">void</span>)randomKeysEncryptDecrypt;
 
 -(<span class="pl-k">void</span>)encrypt:(<span class="pl-c1">NSString</span>*) public_point;
@@ -65,6 +67,8 @@
 
 <h3>
 <a id="verify-signing" class="anchor" href="#verify-signing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Verify Signing</h3>
+
+<div class="highlight highlight-source-objc"><pre>#<span class="pl-k">import</span> <span class="pl-s"><span class="pl-pds">"</span>CryptoppECDSA.h<span class="pl-pds">"</span></span></pre></div>
 
 <div class="highlight highlight-source-objc"><pre>-(<span class="pl-k">BOOL</span>)verifyMessage:(<span class="pl-c1">NSString</span>*)message signedCertificate:(<span class="pl-c1">NSString</span>*)signedCertificateInBase64  compressedServerPublicPoint:(<span class="pl-c1">NSString</span>*)compressedServerPublicPointInBase64  curve:(CurveType)curveType;
 -(<span class="pl-k">void</span>)exampleVerify;</pre></div>
