@@ -2,7 +2,7 @@
 //  Curve.h
 //  Cryptopp-for-iOS
 //
-//  Created by mac on 23/06/15.
+//  Created by Sandeep Aggarwal on 23/06/15.
 //
 //
 
