@@ -8,7 +8,7 @@ CryptoppECC-Encryption/Decryption using ECC(Elliptic curve cryptography).
 ### Motivation
 >[Cryptopp](https://www.cryptopp.com/) is a great free C++ class library of cryptographic schemes.
 But for performing such encryption one has to make a *static library* first from the source code files which is a headache to make for every platform.
-So, I here made a pod which runs a script to make that library depending upon your XCode SDK (both iOS and MacOSX) and then installs it as a dependency in your project.
+So, I here made a pod which runs a script to make that library depending upon your Xcode SDK (both iOS and MacOSX) and then installs it as a dependency in your project.
 I also included some Encryption/Decryption methods which took my lot of time to work properly. 
 
 
