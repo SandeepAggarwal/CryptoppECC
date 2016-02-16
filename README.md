@@ -1,6 +1,6 @@
 # CryptoppECC for iOS and MacOSX
 
-[![CocoaPods Compatible](https://img.shields.io/cocoapods/v/CryptoppECC.svg)](https://img.shields.io/cocoapods/v/CryptoppECC.svg)
+[![Cocoapods Compatible](https://img.shields.io/cocoapods/v/CryptoppECC.svg)](https://img.shields.io/cocoapods/v/CryptoppECC.svg)
 [![Platform](https://img.shields.io/cocoapods/p/CryptoppECC.svg?style=flat)](http://cocoadocs.org/docsets/CryptoppECC)
 
 CryptoppECC-Encryption/Decryption using ECC(Elliptic curve cryptography).
