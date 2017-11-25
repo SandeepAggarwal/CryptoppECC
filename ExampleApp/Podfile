@@ -1,0 +1,6 @@
+
+target 'cryptoppdemo' do
+
+    pod 'CryptoppECC'
+
+end
