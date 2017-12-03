@@ -48,7 +48,7 @@ pod "CryptoppECC"
 
 ```
 
-###Verify Signing
+### Verify Signing
 
 ```objective-c
 #import "CryptoppECDSA.h"
@@ -59,6 +59,10 @@ pod "CryptoppECC"
 -(BOOL)verifyMessage:(NSString*)message signedCertificate:(NSString*)signedCertificateInBase64  compressedServerPublicPoint:(NSString*)compressedServerPublicPointInBase64  curve:(CurveType)curveType;
 -(void)exampleVerify;
 ```
+
+### Added Example file for Android's Bouncy Castle interoperability
+
+[CryptoppECC/ECC.java](https://github.com/SandeepAggarwal/CryptoppECC/blob/master/ECC.java)
 
 ## Requirements
 
